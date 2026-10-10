@@ -1,0 +1,49 @@
+CMSIS-DAP_SWO
+Copyright 2026 Lian Zhou( @davidjia1972)
+
+This product bundles and builds upon software developed by third parties.
+The summary below satisfies the attribution requirement of Apache License 2.0
+section 4(d); see THIRD-PARTY-NOTICES.md for the complete inventory, the exact
+license of every component, and important caveats.
+
+-------------------------------------------------------------------------------
+
+Arm Limited
+  - CMSIS-DAP reference implementation            (src/dap/)
+  - RL-USB device stack, as released by Arm as
+    part of the CMSIS-DAP Interface Firmware      (third_party/USBStack/)
+  - CMSIS Core (Cortex-M) and CMSIS Driver headers (third_party/CMSIS/)
+  Copyright (c) 2009-2019 Arm Limited. All rights reserved.
+  Licensed under the Apache License, Version 2.0.
+
+Arm Ltd
+  - CMSIS driver layer for STM32F10x
+    (USART / DMA / GPIO)                          (third_party/STM32F10x_ARM_Driver/)
+  Copyright (c) 2013-2016 ARM Ltd.
+  Licensed under the zlib license.
+
+STMicroelectronics
+  - STM32F10x Standard Peripheral Library         (third_party/STM32F10x_StdPeriph_Driver/)
+  - CMSIS device system file                      (src/system_stm32f10x.c)
+  - Device startup file, adapted to GNU as        (src/startup_stm32f10x_md.S)
+  Copyright (c) 2010-2011 STMicroelectronics.
+  Redistribution permitted for use with STMicroelectronics devices only.
+
+Keil - An Arm Company
+  - Portions of the RL-ARM / RL-USB middleware    (src/usb/usb_config.c,
+                                                   src/usb/usbd_STM32F103.c,
+                                                   src/usb/usbreg.h,
+                                                   third_party/USBStack/inc/RTL.h)
+  Copyright (c) 2004-2014 Keil - An Arm Company. All rights reserved.
+  These four files carry no open-source grant. See THIRD-PARTY-NOTICES.md,
+  section "Keil RL-USB files".
+
+-------------------------------------------------------------------------------
+
+This work derives from two earlier ports, with thanks:
+
+  x893           https://github.com/x893/CMSIS-DAP
+                 Original STM32 port of CMSIS-DAP.
+
+  RadioOperator  CMSIS-DAP v2.0 protocol update, SWO_UART support, improved
+                 CDC, and board variants for STM32F103C8T6.
